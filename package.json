@@ -1,0 +1,19 @@
+{
+  "name": "NodeJS-First-Project",
+  "version": "1.0.0",
+  "description": "Learning Node JS",
+  "main": "app.js",
+  "repository": "https://github.com/quangtm210395/NodeJS-First-Project.git",
+  "author": "quangtm210395 <quangtmse04402@fpt.edu.vn>",
+  "license": "MIT",
+  "scripts": {
+    "dev" : "nodemon app.js",
+    "run" : "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
