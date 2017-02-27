@@ -7,11 +7,12 @@
   "author": "quangtm210395 <quangtmse04402@fpt.edu.vn>",
   "license": "MIT",
   "scripts": {
-    "dev" : "nodemon app.js",
-    "run" : "node app.js"
+    "dev": "nodemon app.js",
+    "run": "node app.js"
   },
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta11"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
