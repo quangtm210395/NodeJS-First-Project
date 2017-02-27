@@ -1,6 +1,22 @@
 extends layout
 
-block content
-    p name: #{name}
-    p age :#{age}
-    p email: #{email}
+block introContent
+    section#top.one.dark.cover
+        .container
+            header
+                h2.alt
+                    | Hi! I'm 
+                    strong #{name}
+                    | , a #{position}
+                    br
+                    | 								working in #{company}
+                    | .
+                p
+                    | Ligula scelerisque justo sem accumsan diam quis
+                    br
+                    | 								vitae natoque dictum sollicitudin elementum.
+            footer
+                a.button.scrolly(href='#portfolio') Magna Aliquam
+
+block portfolioContent
+    

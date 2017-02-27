@@ -1,9 +1,103 @@
 doctype html
 html
     head
-        title New Page
+        title Quang TM 's Page
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1')
+        //if lte IE 8
+            script(src='assets/js/ie/html5shiv.js')
+        link(rel='stylesheet', href='assets/css/main.css')
+        //if lte IE 8
+            link(rel='stylesheet', href='assets/css/ie8.css')
+        //if lte IE 9
+            link(rel='stylesheet', href='assets/css/ie9.css')
     body
-        h1 Hello
-        block content
+        // Header
+        include partials/header
+
+        // Main
+        #main
+            // Intro
+            block introContent
+            
+            // Portfolio
+            section#portfolio.two
+                .container
+                    header
+                        h2 Portfolio
+                    p
+                        | Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+                        | egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+                        | Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+                        | fusce hendrerit lacus ridiculus.
+                    .row
+                        .u4(class='12u$(mobile)')
+                            article.item
+                                a.image.fit(href='#')
+                                    img(src='images/pic02.jpg', alt='')
+                                header
+                                    h3 Ipsum Feugiat
+                            article.item
+                                a.image.fit(href='#')
+                                    img(src='images/pic03.jpg', alt='')
+                                header
+                                    h3 Rhoncus Semper
+                        .u4(class='12u$(mobile)')
+                            article.item
+                                a.image.fit(href='#')
+                                    img(src='images/pic04.jpg', alt='')
+                                header
+                                    h3 Magna Nullam
+                            article.item
+                                a.image.fit(href='#')
+                                    img(src='images/pic05.jpg', alt='')
+                                header
+                                    h3 Natoque Vitae
+                        .u4(class='4u$ 12u$(mobile)')
+                            article.item
+                                a.image.fit(href='#')
+                                    img(src='images/pic06.jpg', alt='')
+                                header
+                                    h3 Dolor Penatibus
+                            article.item
+                                a.image.fit(href='#')
+                                    img(src='images/pic07.jpg', alt='')
+                                header
+                                    h3 Orci Convallis
+            // About Me
+            section#about.three
+                .container
+                    header
+                        h2 About Me
+                    a.image.featured(href='#')
+                        img(src='images/pic08.jpg', alt='')
+                    p
+                        | Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+                        | ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+                        | laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+                        | parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+                        | dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+                        | ornare iaculis.
+            // Contact
+            section#contact.four
+                .container
+                    header
+                        h2 Contact
+                    p
+                        | Elementum sem parturient nulla quam placerat viverra
+                        | mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+                        | donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+                        | orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.
+                    form(method='post', action='#')
+                        .row
+                            .u6(class='12u$(mobile)')
+                                input(type='text', name='name', placeholder='Name')
+                            .u6(class='6u$ 12u$(mobile)')
+                                input(type='text', name='email', placeholder='Email')
+                            .u6(class='12u$')
+                                textarea(name='message', placeholder='Message')
+                            .u6(class='12u$')
+                                input(type='submit', value='Send Message')
+        
+        // Footer
+        include partials/footer

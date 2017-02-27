@@ -1,0 +1,47 @@
+#header
+    .top
+        // Logo
+        #logo
+            span.image.avatar48
+                img(src='images/avatar.jpg', alt='')
+            h1#title Quang TM
+            p Web Developer
+        // Nav
+        nav#nav
+            //
+                Prologue's nav expects links in one of two formats:
+                1. Hash link (scrolls to a different section within the page)
+                <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+                2. Standard link (sends the user to another page/site)
+                <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+            ul
+                li
+                    a#top-link.skel-layers-ignoreHref(href='#top')
+                        span.icon.fa-home Intro
+                li
+                    a#portfolio-link.skel-layers-ignoreHref(href='#portfolio')
+                        span.icon.fa-th Portfolio
+                li
+                    a#about-link.skel-layers-ignoreHref(href='#about')
+                        span.icon.fa-user About Me
+                li
+                    a#contact-link.skel-layers-ignoreHref(href='#contact')
+                        span.icon.fa-envelope Contact
+    .bottom
+        // Social Icons
+        ul.icons
+            li
+                a.icon.fa-twitter(href='#')
+                    span.label Twitter
+            li
+                a.icon.fa-facebook(href='fb.com/quangtm210395')
+                    span.label Facebook
+            li
+                a.icon.fa-github(href='github.com/quangtm210395')
+                    span.label Github
+            li
+                a.icon.fa-dribbble(href='#')
+                    span.label Dribbble
+            li
+                a.icon.fa-envelope(href='#')
+                    span.label Email

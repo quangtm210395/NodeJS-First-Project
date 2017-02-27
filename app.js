@@ -8,6 +8,8 @@ const port = 6969
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
+
+app.use(express.static(path.join(__dirname, 'resources'), {maxAge: 315360000}))
 app.use('/', homeRouter)
 
 app.listen(port, () => {

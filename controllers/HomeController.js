@@ -1,9 +1,13 @@
 const fs = require('fs');
 
 var user = {
-  name: "quang",
-  age: 21,
-  email: 'quangtm210395@gmail.com'
+  username: "quangtm210395",
+  name: "Tran Minh Quang",
+  age: 22,
+  github: "github.com/quangtm210395",
+  email: 'quangtm210395@gmail.com',
+  position: "Junior Web Developer",
+  company: "FPT University"
 }
 
 var _getIndex = (req, res) => {
