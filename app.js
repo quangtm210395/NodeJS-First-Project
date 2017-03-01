@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 
-const homeRouter = require('./routes/homeRouter')
+const homeRouter = require('./routes/home-router')
 
 const port = 8080
 
